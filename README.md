@@ -27,5 +27,7 @@ Extracted from https://github.com/desertpy/desertpy-pelican.
 It is not used there anymore though. For most sites though, this should
 suffice.
 
+## Add theme configuration
+
 [1]: https://developer.github.com/v3/guides/managing-deploy-keys/#deploy-keys
 [workflow_demo]: https://github.com/nelsonjchen/pelican-action-demo/blob/98ad1a776e95d05b0658a179c4d28e20c353bba4/.github/workflows/pelican.yml#L19
