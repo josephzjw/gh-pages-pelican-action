@@ -27,3 +27,4 @@ git push deploy $remote_branch --force
 rm -fr .git
 cd ../
 echo '=================== Done  ==================='
+pelican-themes -l
