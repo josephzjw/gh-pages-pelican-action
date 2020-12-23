@@ -7,6 +7,9 @@ echo "ACTOR: $GITHUB_ACTOR"
 
 echo '=================== Install Requirements ==================='
 pip install -r requirements.txt
+echo '==== install themes ===='
+git submodule init
+pelican-themes -i pelican-themes/elegant
 echo '=================== Build site ==================='
 pelican content -o output -s ${PELICAN_CONFIG_FILE:=pelicanconf.py}
 echo '=================== Publish to GitHub Pages ==================='
