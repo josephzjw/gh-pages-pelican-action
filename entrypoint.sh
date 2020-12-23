@@ -12,7 +12,7 @@ pelican content -o output -s ${PELICAN_CONFIG_FILE:=pelicanconf.py}
 echo '=================== Publish to GitHub Pages ==================='
 cd output
 echo '================== list pelican-themes ==================='
-ls -al ../pelican-themes
+ls -al ../pelican-themes/elegant
 # shellcheck disable=SC2012
 remote_repo="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
 remote_branch=${GH_PAGES_BRANCH:=gh-pages}
