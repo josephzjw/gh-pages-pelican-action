@@ -9,6 +9,7 @@ echo '=================== Install Requirements ==================='
 pip install -r requirements.txt
 echo '==== install themes ===='
 git submodule init
+git submodule update
 pelican-themes -i pelican-themes/elegant
 echo '=================== Build site ==================='
 pelican content -o output -s ${PELICAN_CONFIG_FILE:=pelicanconf.py}
